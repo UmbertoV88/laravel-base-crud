@@ -35,7 +35,7 @@
                             <td>
                                 <a class="btn btn-info" href="{{ route('fruits.show',['fruit'=> $fruit->id ])}}">Visualizza</a>
                                 <a class="btn btn-warning" href="{{ route('fruits.edit',['fruit'=> $fruit->id ])}}">Modifica</a>
-                                <form class="form-inline" action="{{ route('fruits.destroy',['fruit'=> $fruit->id ])}}" method="post">
+                                <form action="{{ route('fruits.destroy',['fruit'=> $fruit->id ])}}" method="post" style="display:inline-block">
                                     @csrf
                                     @method('DELETE')
                                     <input class="btn btn-danger" type="submit" value="Cancella">
