@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
   <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
   <div class="container-fluid">
     <div class="navbar-header">
@@ -13,7 +13,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="{{ route('fruits.index')}}">Home</a></li>
         <li><a href="#">Link</a></li>
         <li><a href="#">Link</a></li>
       </ul>
